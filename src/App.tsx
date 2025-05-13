@@ -1,34 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+import logoImg from './assets/logo.png'
+
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <img
+        alt="Logo frases"
+        src={logoImg}
+      />
+
+      <h2 className='title'>Categoria</h2>
+      <section className='category-area'>
+        <button className='category-button'>Motivação</button>
+        <button className='category-button'>Bem estar</button>
+      </section>
+
+      <button className='button-frase'>Gerar frases</button>
+
+      <h2 className='textoFrase'>Alguma frase vai vir aqui</h2>
+
+    </div>
   )
 }
 
