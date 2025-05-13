@@ -7,10 +7,11 @@ function App() {
 
 
   return (
-    <div>
+    <div className='container'>
       <img
-        alt="Logo frases"
+        alt="Logo frase"
         src={logoImg}
+        className='logo'
       />
 
       <h2 className='title'>Categoria</h2>
@@ -21,7 +22,7 @@ function App() {
 
       <button className='button-frase'>Gerar frases</button>
 
-      <h2 className='textoFrase'>Alguma frase vai vir aqui</h2>
+      <p className='textofrase'>Alguma frase vai vir aqui</p>
 
     </div>
   )
