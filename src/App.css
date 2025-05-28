@@ -1,7 +1,10 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #121212;
+    background-image: url(assets/istockphoto-808175550-612x612.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -13,7 +16,7 @@
 }
 
 .title {
-    color: #FFF;
+    color: #101010;
     margin: 14px 0;
 }
 
